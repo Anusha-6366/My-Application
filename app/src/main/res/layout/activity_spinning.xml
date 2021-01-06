@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clro"
+    android:padding="10dp"
+    tools:context=".SpinningActivity">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+      android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#C0CA33"
+        android:onClick="SpinWheel"
+        android:text="Spin"
+        android:textColor="#0A0B0B" />
+
+
+    <ImageView
+        android:id="@+id/spi2"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/spi9" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/spi2"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textSize="60sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/spi2"
+        android:layout_alignLeft="@id/spi2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-79dp"
+        android:background="@drawable/clr"
+        app:srcCompat="@drawable/ar" />
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clro"
+    tools:context=".Yesn">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/yes" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="spin"
+        android:layout_alignBottom="@id/image"
+        android:layout_centerHorizontal="true"
+        android:onClick="spin"
+        android:background="#F49618"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="137dp"
+        app:srcCompat="@drawable/ar1" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button"
+        android:layout_marginBottom="67dp"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="#070707"
+        android:textSize="30dp" />
+
+
+
+</RelativeLayout>

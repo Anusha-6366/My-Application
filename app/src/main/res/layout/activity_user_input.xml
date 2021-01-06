@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bck"
+    android:gravity="right"
+    android:padding="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:visibility="visible"
+    tools:context=".User_input"
+    tools:ignore="ExtraText"
+    tools:visibility="visible">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnClickHere"
+        android:layout_centerInParent="false"
+        android:ems="10"
+        android:hint="Enter your Name"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#1A237E"
+        android:textSize="36dp" />
+
+    <Button
+        android:id="@+id/btnClickHere"
+        style="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:layout_centerInParent="true"
+        android:background="#4A148C"
+        android:text="Click Here"
+        android:textSize="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#1BD8AC" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnClickHere"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20dp"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="SpinWheel"
+        android:background="#C0CA33"
+        android:textColor="#000"/>
+
+    android:text="TextView"
+        android:paddingLeft="20dp" />
+
+</RelativeLayout>
