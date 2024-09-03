@@ -1,20 +1,25 @@
 pipeline {
     agent any
 
+    tools {
+        jdk 'jdk-8' // or whatever Java version you're using
+        maven 'maven-3' // or gradle if you're using that
+    }
+
     stages {
         stage('Build') {
             steps {
-                echo 'Building the application...'
+                sh 'mvn clean package' // or gradle build if you're using that
             }
         }
         stage('Test') {
             steps {
-                echo 'Running tests...'
+                sh 'mvn test' // or gradle test if you're using that
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying the application...'
+                // deploy your application here
             }
         }
     }
