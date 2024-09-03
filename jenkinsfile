@@ -9,6 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'javac *.java' // compile the Java files
+                echo 'build application'
             }
         }
       
