@@ -3,24 +3,14 @@ pipeline {
 
     tools {
         jdk 'jdk-8' // or whatever Java version you're using
-        maven 'maven-3' // or gradle if you're using that
     }
 
     stages {
         stage('Build') {
             steps {
-                sh 'mvn clean package' // or gradle build if you're using that
+                sh 'javac *.java' // compile the Java files
             }
         }
-        stage('Test') {
-            steps {
-                sh 'mvn test' // or gradle test if you're using that
-            }
-        }
-        stage('Deploy') {
-            steps {
-                // deploy your application here
-            }
-        }
+      
     }
 }
